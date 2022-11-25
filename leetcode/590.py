@@ -12,8 +12,7 @@ class Solution:
         res = []
         stack = [root]
         while stack:
-            node = stack.pop()
-            if node:
+            if node := stack.pop():
                 res.append(node.val)
                 stack.extend(node.children)
 

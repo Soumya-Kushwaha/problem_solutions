@@ -9,9 +9,9 @@ for y, i in enumerate(maps):
         if j == "#":
             continue
         count = 0
-        if y - 1 >= 0:
+        if y >= 1:
             count += maps[y - 1][x] != "#"
-        if x - 1 >= 0:
+        if x >= 1:
             count += maps[y][x - 1] != "#"
         if y + 1 < height:
             count += maps[y + 1][x] != "#"

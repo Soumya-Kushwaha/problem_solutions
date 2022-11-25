@@ -4,11 +4,11 @@ class Solution:
             return head
         p = dummy = ListNode(None)
         dummy.next = head
-        for i in range(m - 1):
+        for _ in range(m - 1):
             p = p.next
         tail = p.next
 
-        for i in range(n - m):
+        for _ in range(n - m):
             tmp = p.next
             p.next = tail.next
             tail.next = tail.next.next

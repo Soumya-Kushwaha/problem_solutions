@@ -8,5 +8,5 @@ for i in range(int(input())):
                 for b in range(j, n):
                     if m[i][j] > m[a][b]:
                         count += 1
-            
+
     print(count)

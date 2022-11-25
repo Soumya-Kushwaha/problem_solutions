@@ -2,9 +2,7 @@ class Solution:
     def check(self, left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
         if not left:
             return not right
-        if not right:
-            return False
-        return left.val == right.val
+        return left.val == right.val if right else False
 
     def traverse(self, left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
         if not self.check(left, right):

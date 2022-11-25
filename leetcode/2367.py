@@ -5,7 +5,7 @@ class Solution:
         for i in nums:
             if i >= 2 * diff:
                 r += visited[i - diff] and visited[i - 2 * diff]
-            
+
             visited[i] = 1
 
         return r

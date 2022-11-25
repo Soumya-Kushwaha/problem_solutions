@@ -7,12 +7,12 @@ check = n
 
 c = 0
 
-for i in range(n, max(n - 1000, 0), -1):
+for i in range(check, max(check - 1000, 0), -1):
     l = []
     while i <= check:
         l += (i,)
         i = so(i)
-    if n in l:
+    if check in l:
         c += 1
 
 print(["NO", "YES"][c >= 2])

@@ -4,5 +4,5 @@ class Solution:
             if root.val == val:
                 return root
             root = root.left if root.val > val else root.right
-        
+
         return

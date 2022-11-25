@@ -1,5 +1,5 @@
 n = int(input())
-for i in range(n):
+for _ in range(n):
     s = x = int(input())
     k = 0
     smile = ":)"

@@ -21,7 +21,7 @@ class Solution:
             i, j = 0, int(c**0.5)
 
             while i <= j:
-                temp = i * i + j * j
+                temp = i**2 + j**2
                 if temp == c:
                     return 2
                 elif temp > c:

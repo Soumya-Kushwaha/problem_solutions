@@ -1,9 +1,10 @@
 import itertools
 
 message = input()
-s = ""
-for i in message:
-    s += "0" * (7 - len(bin(ord(i))[2:])) + bin(ord(i))[2:]
+s = "".join(
+    "0" * (7 - len(bin(ord(i))[2:])) + bin(ord(i))[2:] for i in message
+)
+
 answer = ""
 for char, char_counter in itertools.groupby(s):
     a = list(char_counter).copy()

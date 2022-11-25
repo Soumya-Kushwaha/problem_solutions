@@ -13,7 +13,7 @@ class Solution:
             L += 1
         last.next = head
 
-        for i in range(L - k % L):
+        for _ in range(L - k % L):
             last = last.next
         final = last.next
         last.next = None

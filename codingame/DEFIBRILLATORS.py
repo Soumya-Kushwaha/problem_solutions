@@ -4,7 +4,7 @@ lonA = float(input().replace(",", "."))
 latA = float(input().replace(",", "."))
 n = int(input())
 res = []
-for i in range(n):
+for _ in range(n):
     defib = input().replace(",", ".").split(";")
     lonB, latB = float(defib[-2]), float(defib[-1])
     x = (lonB - lonA) * math.cos((latA + latB) / 2)

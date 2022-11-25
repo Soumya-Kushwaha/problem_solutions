@@ -17,7 +17,5 @@ class Solution:
                 continue
             if node.val == target.val:
                 return node
-            stack.append(node.left)
-            stack.append(node.right)
-
+            stack.extend((node.left, node.right))
         return -1

@@ -3,7 +3,7 @@ W, H = map(int, input().split())
 T = input().split("  ")
 l = list(range(len(T)))
 
-for i in range(H - 2):
+for _ in range(H - 2):
     line = input().split("|")
 
     for j in range(len(line)):

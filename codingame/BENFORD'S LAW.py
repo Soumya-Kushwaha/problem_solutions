@@ -5,7 +5,11 @@ v = {}
 regex = re.compile(r"x*([1-9]).*")
 
 n = int(input())
-for i in range(n):
-    nmb = int(re.search(regex, input()).group(1))
+for _ in range(n):
+    nmb = int(re.search(regex, input())[1])
     v[nmb] = v.setdefault(nmb, 0) + 1
-print("false" if all([b[i] - 10 < v[i] / n * 100 < b[i] + 10 for i in v]) else "true")
+print(
+    "false"
+    if all(b[i] - 10 < v[i] / n * 100 < b[i] + 10 for i in v)
+    else "true"
+)
