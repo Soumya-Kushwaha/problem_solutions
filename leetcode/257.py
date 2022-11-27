@@ -3,9 +3,11 @@ class Solution:
         if not root:
             return []
         result = [
-            str(root.val) + "->" + path for path in self.binaryTreePaths(root.left)
+            f"{str(root.val)}->{path}" for path in self.binaryTreePaths(root.left)
         ]
+
         result += [
-            str(root.val) + "->" + path for path in self.binaryTreePaths(root.right)
+            f"{str(root.val)}->{path}" for path in self.binaryTreePaths(root.right)
         ]
+
         return result or [str(root.val)]

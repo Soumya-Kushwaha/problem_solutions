@@ -3,7 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        for i in range(n):
+        for _ in range(n):
             nums1.pop()
         nums1.extend(nums2)
         nums1.sort()

@@ -3,7 +3,7 @@ l = int(input())
 h = int(input())
 t = input().upper()
 rows = []
-for i in range(h):
+for _ in range(h):
     row = input()
     rows.append(row)
 for i in rows:

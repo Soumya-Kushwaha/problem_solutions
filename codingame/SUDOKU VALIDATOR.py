@@ -2,7 +2,7 @@ import numpy as np
 
 l = []
 K = 0
-for i in range(9):
+for _ in range(9):
     t = []
     for j in input().split():
         n = int(j)

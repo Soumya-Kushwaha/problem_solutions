@@ -1,4 +1,4 @@
-for i in range(int(input())):
+for _ in range(int(input())):
     n,k = map(int,input().split())
     arr = input().split()
     index = n - (k%n)

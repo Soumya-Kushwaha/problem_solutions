@@ -9,10 +9,7 @@ class Solution:
         res = []
         stack = [root]
         while stack:
-            node = stack.pop()
-            if node:
+            if node := stack.pop():
                 res.append(node.val)
-                stack.append(node.left)
-                stack.append(node.right)
-
+                stack.extend((node.left, node.right))
         return res[::-1]

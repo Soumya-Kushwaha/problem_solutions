@@ -3,7 +3,7 @@ from operator import *
 
 OPERATORS_MAP = {"VALUE": add, "ADD": add, "SUB": sub, "MULT": mul}
 
-cells = [tuple(input().split()) for i in range(int(input()))]
+cells = [tuple(input().split()) for _ in range(int(input()))]
 
 
 def evaluate(arg):

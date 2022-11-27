@@ -7,11 +7,9 @@ def win(l):
             l[j][i] == "O" for j in range(3)
         ):
             return True
-    if all(l[i][i] == "O" for i in range(3)) or all(
+    return all(l[i][i] == "O" for i in range(3)) or all(
         l[i][2 - i] == "O" for i in range(3)
-    ):
-        return True
-    return False
+    )
 
 
 for i in range(3):

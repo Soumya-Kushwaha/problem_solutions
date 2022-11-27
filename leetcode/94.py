@@ -9,7 +9,7 @@ class Solution:
         res = []
         nodes = []
         curr = root
-        if not root:
+        if not curr:
             return res
 
         while nodes or curr:

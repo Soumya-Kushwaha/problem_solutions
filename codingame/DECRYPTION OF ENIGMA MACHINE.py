@@ -2,7 +2,7 @@ upp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 operation = input()
 num = int(input())
 rotors = []
-for i in range(3):
+for _ in range(3):
     rotors += (input(),)
 message = input()
 

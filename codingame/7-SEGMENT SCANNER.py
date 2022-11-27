@@ -17,6 +17,5 @@ D = {
 for i in range(999):
     s = i * 3
     e = s + 3
-    t = "".join(l1[s:e] + l2[s:e] + l3[s:e])
-    if t:
+    if t := "".join(l1[s:e] + l2[s:e] + l3[s:e]):
         print(end=D[t])
